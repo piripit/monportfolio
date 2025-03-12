@@ -1,103 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$current_page = 'projet_entreprise';
+$page_title = 'Projets Entreprise';
+include 'header.php';
+?>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style_pe.css" />
-  <title>Projets de Cours</title>
+<div class="container">
+  <section class="projet-section fade-in">
+    <h1>Projets Entreprise</h1>
+    <p class="section-intro">Découvrez les projets réalisés pendant mes stages en entreprise</p>
 
-</head>
-
-<body>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.php">Accueil</a></li>
-      <li><a href="#">Tableau</a></li>
-      <li><a href="projet.php">Projets</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="Container">
-    <header class="header">
-      <h1>Projets de Cours</h1>
-    </header>
-    <main class="project-list">
-      <div class="project-card">
-        <img src="img/immobilier.PNG" alt="Calculatrice prêt immobilier" />
-        <div>
-          <h2>Calculatrice prêt immobilier</h2>
-          <button id="infoButton1">Plus d'infos ></button>
-          <div id="infoContainer1" class="info-container">
-            <h3>Compétences Acquises</h3>
-            <p>
-              En travaillant sur le projet de la calculatrice immobilière,
-              j'ai acquis plusieurs compétences clés :
-            </p>
-            <ul>
-              <li>
-                <strong>HTML/CSS :</strong> Création d'une interface
-                utilisateur responsive et esthétique.
-              </li>
-              <li>
-                <strong>JavaScript :</strong> Utilisation de JavaScript pour
-                gérer les interactions utilisateur et effectuer des calculs
-                dynamiques.
-              </li>
-              <li>
-                <strong>Flexbox :</strong> Mise en page d'éléments avec
-                Flexbox pour un alignement intuitif.
-              </li>
-              <li>
-                <strong>Gestion des événements :</strong> Manipulation des
-                événements pour afficher et masquer des informations.
-              </li>
-            </ul>
+    <div class="projet-grid">
+      <div class="projet-card">
+        <img src="img/projet_entreprise1.jpg" alt="Projet 1" class="projet-image">
+        <div class="projet-content">
+          <h3>Application de Gestion des Stocks</h3>
+          <p>Développement d'une application web pour la gestion des stocks et des commandes chez ECONOCOM.</p>
+          <div class="projet-tags">
+            <span class="projet-tag">PHP</span>
+            <span class="projet-tag">MySQL</span>
+            <span class="projet-tag">JavaScript</span>
+          </div>
+          <div class="projet-links">
+            <a href="#" class="projet-link">
+              <i class="fas fa-external-link-alt"></i>
+              Voir le projet
+            </a>
+            <a href="#" class="projet-link">
+              <i class="fab fa-github"></i>
+              Code source
+            </a>
           </div>
         </div>
       </div>
-      <div class="project-card">
-        <img src="img/immobilier.PNG" alt="Calculatrice prêt immobilier" />
-        <div>
-          <h2>Calculatrice prêt immobilier</h2>
-          <button id="infoButton2">Plus d'infos ></button>
-          <div id="infoContainer2" class="info-container">
-            <p>
-              Cette calculatrice vous permet de simuler vos prêts immobiliers
-              en fonction de votre montant, taux d'intérêt et durée.
-            </p>
-            <p>
-              Entrez les informations nécessaires pour obtenir un tableau
-              d'amortissement détaillé.
-            </p>
+
+      <div class="projet-card">
+        <img src="img/projet_entreprise2.jpg" alt="Projet 2" class="projet-image">
+        <div class="projet-content">
+          <h3>Site Intranet</h3>
+          <p>Création d'un site intranet pour la communication interne et la gestion des documents.</p>
+          <div class="projet-tags">
+            <span class="projet-tag">Laravel</span>
+            <span class="projet-tag">Vue.js</span>
+            <span class="projet-tag">Bootstrap</span>
+          </div>
+          <div class="projet-links">
+            <a href="#" class="projet-link">
+              <i class="fas fa-external-link-alt"></i>
+              Voir le projet
+            </a>
+            <a href="#" class="projet-link">
+              <i class="fab fa-github"></i>
+              Code source
+            </a>
           </div>
         </div>
       </div>
-    </main>
-  </div>
-  <script>
-    document
-      .getElementById("infoButton1")
-      .addEventListener("click", function() {
-        const infoContainer = document.getElementById("infoContainer1");
-        infoContainer.style.display =
-          infoContainer.style.display === "none" ||
-          infoContainer.style.display === "" ?
-          "block" :
-          "none";
-      });
-    document
-      .getElementById("infoButton2")
-      .addEventListener("click", function() {
-        const infoContainer = document.getElementById("infoContainer2");
-        infoContainer.style.display =
-          infoContainer.style.display === "none" ||
-          infoContainer.style.display === "" ?
-          "block" :
-          "none";
-      });
-  </script>
-</body>
 
-</html>
-s
+      <div class="projet-card">
+        <img src="img/projet_entreprise3.jpg" alt="Projet 3" class="projet-image">
+        <div class="projet-content">
+          <h3>Application de Support Client</h3>
+          <p>Développement d'une application de support client avec système de tickets et suivi des demandes.</p>
+          <div class="projet-tags">
+            <span class="projet-tag">React</span>
+            <span class="projet-tag">Node.js</span>
+            <span class="projet-tag">MongoDB</span>
+          </div>
+          <div class="projet-links">
+            <a href="#" class="projet-link">
+              <i class="fas fa-external-link-alt"></i>
+              Voir le projet
+            </a>
+            <a href="#" class="projet-link">
+              <i class="fab fa-github"></i>
+              Code source
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<?php include 'footer.php'; ?>

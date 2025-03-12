@@ -13,8 +13,12 @@ $allowed_files = [
     'index.php',
     'about.php',
     'projet.php',
+    'projet_cours.php',
+    'projet_entreprise.php',
     'entreprise.php',
-    'ecole.php'
+    'ecole.php',
+    'veille.php',
+    'tableau.php'
 ];
 
 $file = $_GET['file'] ?? '';

@@ -1,98 +1,91 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
+$current_page = 'about';
+$page_title = 'À propos';
+include 'header.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
-</head>
-
-<body>
-    <nav class="navbar">
-        <ul class="menu">
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="projet_cours.php">Projet Cours</a></li>
-            <li><a href="projet_entreprise.php">Projet Entreprise</a></li>
-        </ul>
-    </nav>
-
-    <div id="about-modal" class="modal">
-        <div class="modal-content">
-            <img src="img/moriel-removebg-preview.png" alt="À propos" class="profile-img" />
-            <h2>À propos de moi</h2>
-            <p>
-                Moriel, c'est moi en quelques mots ! Polyvalent, rigoureux et passionné de technologie...
-            </p>
+<div class="container">
+    <section class="about-section fade-in">
+        <div class="about-header">
+            <img src="img/mol-removebg (1).png" alt="Photo de profil" class="profile-img">
+            <h1>À propos de moi</h1>
+            <p>Développeur Web Full Stack passionné</p>
         </div>
-    </div>
 
-    <div id="skills-modal" class="modal">
-        <div class="modal-content">
-            <h2>Connaissances des Stacks</h2>
-            <h3>Frontend</h3>
-            <table class="skills-table">
-                <tr>
-                    <th>Logo</th>
-                    <th>Technologie</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td><img src="img/logo-html.jpg" alt="HTML"></td>
-                    <td>HTML</td>
-                    <td>Structure les pages web.</td>
-                </tr>
-                <tr>
-                    <td><img src="img/logo-css.jpg" alt="CSS"></td>
-                    <td>CSS</td>
-                    <td>Gère le style des pages web.</td>
-                </tr>
-                <tr>
-                    <td><img src="img/js.png" alt="JS"></td>
-                    <td>JavaScript</td>
-                    <td>Ajoute de l’interactivité.</td>
-                </tr>
-                <tr>
-                    <td><img src="img/logo-bootstrap.jpg" alt="Bootstrap"></td>
-                    <td>Bootstrap</td>
-                    <td>Framework CSS pour interfaces responsives.</td>
-                </tr>
-                <tr>
-                    <td><img src="img/logo-react.jpg" alt="React"></td>
-                    <td>React.js</td>
-                    <td>Librairie pour interfaces dynamiques.</td>
-                </tr>
-            </table>
-            <h3>Backend</h3>
-            <table class="skills-table">
-                <tr>
-                    <th>Logo</th>
-                    <th>Technologie</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td><img src="img/php.jpg" alt="PHP"></td>
-                    <td>PHP</td>
-                    <td>Langage serveur.</td>
-                </tr>
-                <tr>
-                    <td><img src="img/logo-laravel.jpg" alt="Laravel"></td>
-                    <td>Laravel</td>
-                    <td>Framework PHP moderne.</td>
-                </tr>
-                <tr>
-                    <td><img src="img/logo-nodejs.jpg" alt="Node.js"></td>
-                    <td>Node.js</td>
-                    <td>JS côté serveur.</td>
-                </tr>
-                <tr>
-                    <td><img src="img/logo-python.jpg" alt="Python"></td>
-                    <td>Python</td>
-                    <td>Langage polyvalent.</td>
-                </tr>
-            </table>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Mon Parcours</h2>
+                <p>
+                    Je suis un développeur web passionné par la création d'applications web modernes et performantes.
+                    Mon parcours m'a permis d'acquérir une solide expérience dans le développement front-end et back-end.
+                </p>
+            </div>
+
+            <div class="about-cards">
+                <div class="about-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Compétences Techniques</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>PHP & MySQL</li>
+                        <li>React & Node.js</li>
+                        <li>Git & GitHub</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Formation</h3>
+                    <ul class="skill-list">
+                        <li>BTS SIO - Option SLAM</li>
+                        <li>Baccalauréat STI2D</li>
+                        <li>Formations en ligne</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Outils</h3>
+                    <ul class="skill-list">
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>Figma</li>
+                        <li>Postman</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-details">
+                <h2>Mes Objectifs</h2>
+                <p>
+                    Je souhaite continuer à développer mes compétences en développement web et participer à des projets innovants.
+                    Mon objectif est de créer des applications web performantes et accessibles qui répondent aux besoins des utilisateurs.
+                </p>
+
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Développement Web</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Applications Mobiles</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-database"></i>
+                        <span>Bases de Données</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Cybersécurité</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+    </section>
+</div>
 
-</html>
+<?php include 'footer.php'; ?>

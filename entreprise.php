@@ -1,124 +1,93 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Présentation de l'Entreprise ECONOCOM</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        background-color: #f4f4f4; /* Couleur de fond douce */
-      }
+<?php
+$current_page = 'entreprise';
+$page_title = 'Entreprise';
+include 'header.php';
+?>
 
-      nav.entete {
-        background: #333; /* Couleur de fond du menu */
-        padding: 15px 0; /* Espacement vertical */
-        position: fixed; /* Fixer la barre de navigation en haut de la page */
-        top: 0;
-        width: 100%;
-        z-index: 1000; /* Mettre la barre de navigation au-dessus du contenu */
-      }
+<div class="container">
+    <section class="entreprise-section fade-in">
+        <h1>Mon Stage en Entreprise</h1>
+        <p class="section-intro">Découvrez mon expérience professionnelle et les missions réalisées</p>
 
-      nav.entete .menu {
-        list-style: none;
-        padding: 0;
-        text-align: center; /* Centrer le menu */
-      }
+        <div class="entreprise-content">
+            <div class="info-card">
+                <div class="card-header">
+                    <i class="fas fa-building"></i>
+                    <h2>Présentation de l'Entreprise</h2>
+                </div>
+                <p>Nom de l'entreprise : [Nom de l'entreprise]</p>
+                <p>Localisation : [Ville, Pays]</p>
+                <p>Période de stage : [Date de début] - [Date de fin]</p>
+                <p>Description de l'entreprise : [Description détaillée]</p>
+            </div>
 
-      nav.entete .menu li {
-        display: inline; /* Afficher les éléments en ligne */
-        margin: 0 15px; /* Espacement entre les éléments */
-      }
+            <div class="missions-grid">
+                <div class="mission-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Développement Web</h3>
+                    <ul class="mission-list">
+                        <li>Création de sites web responsifs</li>
+                        <li>Développement d'applications web</li>
+                        <li>Maintenance et mise à jour de sites existants</li>
+                    </ul>
+                </div>
 
-      nav.entete .menu li a {
-        color: white; /* Couleur des liens */
-        text-decoration: none; /* Pas de soulignement */
-        font-weight: bold; /* Mettre en gras */
-        padding: 10px 15px; /* Espacement interne pour les liens */
-        transition: background 0.3s; /* Transition pour l'effet de survol */
-      }
+                <div class="mission-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Bases de Données</h3>
+                    <ul class="mission-list">
+                        <li>Conception de schémas de bases de données</li>
+                        <li>Optimisation des requêtes SQL</li>
+                        <li>Gestion des données et sauvegardes</li>
+                    </ul>
+                </div>
 
-      nav.entete .menu li a:hover {
-        background: darkmagenta; /* Couleur de fond au survol */
-        border-radius: 5px; /* Coins arrondis au survol */
-      }
+                <div class="mission-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Projets Réalisés</h3>
+                    <ul class="mission-list">
+                        <li>Projet 1 : [Description]</li>
+                        <li>Projet 2 : [Description]</li>
+                        <li>Projet 3 : [Description]</li>
+                    </ul>
+                </div>
+            </div>
 
-      main {
-        padding: 20px;
-        max-width: 800px; /* Limiter la largeur du contenu principal */
-        margin: auto; /* Centrer le contenu */
-        background: white; /* Fond blanc pour le contenu */
-        border-radius: 8px; /* Coins arrondis */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-        margin-top: 80px; /* Espacement entre la barre de navigation et le contenu */
-      }
+            <div class="info-card">
+                <div class="card-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h2>Compétences Acquises</h2>
+                </div>
+                <ul class="mission-list">
+                    <li>Maîtrise des technologies web modernes</li>
+                    <li>Expérience en développement d'applications</li>
+                    <li>Travail en équipe et communication</li>
+                    <li>Gestion de projet et respect des délais</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
 
-      h2 {
-        color: darkmagenta; /* Couleur des sous-titres */
-      }
+<?php include 'footer.php'; ?>
 
-      p {
-        margin-bottom: 15px; /* Espacement entre les paragraphes */
-      }
+<button class="theme-toggle" aria-label="Basculer le mode sombre">
+    <i class="fas fa-moon"></i>
+</button>
 
-      .button {
-        display: inline-block;
-        padding: 10px 20px;
-        background: darkorchid; /* Couleur du bouton */
-        color: white;
-        text-decoration: none;
-        border-radius: 5px; /* Coins arrondis pour le bouton */
-        transition: background 0.3s; /* Transition pour l'effet de survol */
-      }
+<script src="script/theme.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
 
-      .button:hover {
-        background: darkmagenta; /* Couleur du bouton au survol */
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="entete">
-      <div class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="#" id="about-link">À propos</a></li>
-        <li><a href="ecole.html">Formation</a></li>
-        <li><a href="#" id="skills-link">Compétences</a></li>
-        <li><a href="#">Tableau</a></li>
-        <li><a href="projet.html">Projets</a></li>
-        <li><a href="#">Veille</a></li>
-        <li><a href="entreprise.html">Entreprise</a></li>
-        <li><a href="#">Contact</a></li>
-      </div>
-    </nav>
-
-    <main>
-      <header>
-        <h1>Présentation de l'Entreprise ECONOCOM</h1>
-      </header>
-      <h2>À propos d'ECONOCOM</h2>
-      <p>
-        ECONOCOM est une entreprise spécialisée dans la transformation digitale
-        et la gestion des infrastructures informatiques. En tant que prestataire
-        pour la SNCF, ECONOCOM fournit des solutions innovantes pour améliorer
-        l'efficacité opérationnelle et la satisfaction des clients.
-      </p>
-      <p>
-        En tant que technicien Help Desk de niveau 1, je suis responsable de la
-        gestion des demandes d'assistance technique, de la résolution des
-        problèmes informatiques et de l'assistance aux utilisateurs pour
-        garantir un service de qualité.
-      </p>
-      <p>
-        Mon rôle consiste à répondre aux appels des utilisateurs, à
-        diagnostiquer les problèmes techniques et à fournir des solutions
-        rapides et efficaces pour minimiser les interruptions de service.
-      </p>
-      <a href="https://www.econocom.com/" class="button" target="_blank"
-        >Visitez notre site</a
-      >
-    </main>
-  </body>
-</html>
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    });
+</script>

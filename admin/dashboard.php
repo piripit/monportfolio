@@ -10,17 +10,41 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 // Fonction pour sauvegarder les modifications
 function saveChanges($content, $file)
 {
+    // Vérifier si le fichier existe et est accessible en écriture
+    if (!file_exists('../' . $file)) {
+        error_log("Erreur: Le fichier ../{$file} n'existe pas");
+        return false;
+    }
+
+    if (!is_writable('../' . $file)) {
+        error_log("Erreur: Le fichier ../{$file} n'est pas accessible en écriture");
+        return false;
+    }
+
     $backup_dir = '../backups/';
     if (!file_exists($backup_dir)) {
-        mkdir($backup_dir, 0777, true);
+        if (!mkdir($backup_dir, 0777, true)) {
+            error_log("Erreur: Impossible de créer le dossier de sauvegarde");
+            return false;
+        }
     }
 
     // Créer une sauvegarde avant modification
     $backup_file = $backup_dir . basename($file) . '_' . date('Y-m-d_H-i-s') . '.bak';
-    copy($file, $backup_file);
+    if (!copy('../' . $file, $backup_file)) {
+        error_log("Erreur: Impossible de créer la sauvegarde");
+        return false;
+    }
 
     // Sauvegarder les modifications
-    return file_put_contents($file, $content);
+    $result = file_put_contents('../' . $file, $content);
+    if ($result === false) {
+        error_log("Erreur: Impossible de sauvegarder les modifications dans ../{$file}");
+        return false;
+    }
+
+    error_log("Succès: Modifications sauvegardées dans ../{$file}");
+    return true;
 }
 
 // Traitement des modifications
@@ -37,8 +61,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if (saveChanges($content, $file)) {
                     $message = "Modifications sauvegardées avec succès !";
                 } else {
-                    $message = "Erreur lors de la sauvegarde.";
+                    $message = "Erreur lors de la sauvegarde. Vérifiez les logs pour plus de détails.";
                 }
+            } else {
+                $message = "Erreur: Fichier ou contenu manquant";
             }
             break;
 
@@ -57,8 +83,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration - Tableau de bord</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/admin.css">
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- TinyMCE avec clé API gratuite -->
+    <script src="https://cdn.tiny.cloud/1/qagffr3pkuv17a8on1afax661irst1hbr4e6tbv888sz91jc/tinymce/6/tinymce.min.js"></script>
 </head>
 
 <body class="admin-dashboard">
@@ -79,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div class="admin-container">
         <?php if (isset($message)): ?>
-            <div class="message"><?php echo $message; ?></div>
+            <div class="message"><?php echo htmlspecialchars($message); ?></div>
         <?php endif; ?>
 
         <div class="admin-section" id="content-section">
@@ -90,6 +120,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <option value="index.php">Page d'accueil</option>
                     <option value="about.php">À propos</option>
                     <option value="projet.php">Projets</option>
+                    <option value="projet_cours.php">Projets Cours</option>
+                    <option value="projet_entreprise.php">Projets Entreprise</option>
+                    <option value="entreprise.php">Entreprise</option>
+                    <option value="ecole.php">Formation</option>
+                    <option value="veille.php">Veille</option>
                 </select>
 
                 <form method="POST" id="content-form">
@@ -127,13 +162,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 
+    <button class="theme-toggle" aria-label="Basculer le mode sombre">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="../script/theme.js"></script>
     <script>
-        // Initialisation de TinyMCE
+        // Initialisation de TinyMCE avec configuration améliorée
         tinymce.init({
             selector: '#content-editor',
             height: 500,
-            plugins: 'code table lists link image',
-            toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | bullist numlist | link image | code'
+            plugins: [
+                'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                'insertdatetime', 'media', 'table', 'help', 'wordcount'
+            ],
+            toolbar: 'undo redo | blocks | ' +
+                'bold italic backcolor | alignleft aligncenter ' +
+                'alignright alignjustify | bullist numlist outdent indent | ' +
+                'removeformat | help',
+            content_style: 'body { font-family: Inter, sans-serif; font-size: 14px }',
+            branding: false,
+            promotion: false
         });
 
         // Gestion de la navigation
@@ -170,6 +220,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Gestion des projets
         function addNewProject() {
             // Implémenter l'ajout de projet
+            alert('Fonctionnalité en cours de développement');
         }
     </script>
 </body>

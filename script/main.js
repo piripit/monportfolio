@@ -1,18 +1,27 @@
 var typed = new Typed("#textDefile", {
   strings: ["FIATUWO", "Moriel"],
-  loop: 1,
+  loop: true,
   backSpeed: 100,
   startDelay: 100,
   typeSpeed: 50,
+  showCursor: true,
+  cursorChar: "|",
 });
 
 function openModal(modalId) {
-  document.getElementById(modalId).style.display = "block";
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
 }
 
 function closeModal() {
-  document.getElementById("cvModal").style.display = "none";
-  document.getElementById("projects-modal").style.display = "none";
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach((modal) => {
+    modal.classList.remove("active");
+  });
+  document.body.style.overflow = "";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -25,8 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 });
+
 document.getElementById("cvDownloadBtn").addEventListener("click", function () {
-  document.getElementById("cvModal").style.display = "block";
+  openModal("cvModal");
 });
 
 // Gestion du mode sombre
@@ -119,18 +129,68 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Validation du formulaire de contact
 const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
+  contactForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    // Ajoutez ici votre logique d'envoi de formulaire
-    const formData = new FormData(this);
-    console.log("Envoi du formulaire...", Object.fromEntries(formData));
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Envoi en cours...";
 
-    // Animation de confirmation
-    this.classList.add("submitted");
+    try {
+      const formData = new FormData(this);
+      const response = await fetch("process_contact.php", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        submitBtn.textContent = "Message envoyé !";
+        submitBtn.style.backgroundColor = "var(--success-color)";
+        this.reset();
+      } else {
+        throw new Error("Erreur lors de l'envoi");
+      }
+    } catch (error) {
+      submitBtn.textContent = "Erreur d'envoi";
+      submitBtn.style.backgroundColor = "var(--error-color)";
+    }
+
     setTimeout(() => {
-      this.classList.remove("submitted");
-      this.reset();
-    }, 2000);
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+      submitBtn.style.backgroundColor = "";
+    }, 3000);
   });
 }
+
+// Gestion du mode sombre
+const themeToggle = document.querySelector(".theme-toggle");
+if (themeToggle) {
+  themeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark-theme");
+    const isDark = document.body.classList.contains("dark-theme");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    themeToggle.querySelector("i").className = isDark
+      ? "fas fa-sun"
+      : "fas fa-moon";
+  });
+
+  // Appliquer le thème sauvegardé
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggle.querySelector("i").className = "fas fa-sun";
+  }
+}
+
+// Gestion de la fermeture des modales
+document.addEventListener("click", function (event) {
+  if (event.target.classList.contains("modal")) {
+    closeModal();
+  }
+});
+
+document.querySelectorAll(".close").forEach((button) => {
+  button.addEventListener("click", closeModal);
+});
