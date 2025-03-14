@@ -1,26 +1,29 @@
 <?php
-$current_page = 'ecole';
-$page_title = 'Formation';
+$page_title = "Formation";
+$current_page = "ecole";
 include 'header.php';
 ?>
 
 <div class="container">
-  <section class="ecole-section fade-in">
-    <h1>Ma Formation</h1>
-    <p class="section-intro">Mon parcours académique et mes compétences acquises</p>
+  <section class="formation-section">
+    <div class="section-header">
+      <h2>Ma Formation</h2>
+      <p>Découvrez mon parcours académique et les compétences acquises</p>
+    </div>
 
     <div class="formation-timeline">
       <div class="formation-item">
-        <div class="formation-date">2023 - 2024</div>
+        <div class="formation-date">2023 - 2025</div>
         <div class="formation-content">
-          <h2>BTS SIO - Option SLAM</h2>
-          <h3>Lycée Saint-Joseph</h3>
-          <p>Formation en développement d'applications et solutions logicielles</p>
+          <h2>BTS Services Informatiques aux Organisations</h2>
+          <h3>Option SLAM (Solutions Logicielles et Applications Métiers)</h3>
+          <p>Formation en alternance à MyDigitalSchool Angers</p>
           <ul class="formation-skills">
             <li>Développement Web</li>
             <li>Programmation Orientée Objet</li>
             <li>Bases de données</li>
             <li>Cybersécurité</li>
+            <li>Gestion de projet</li>
           </ul>
         </div>
       </div>
@@ -28,47 +31,64 @@ include 'header.php';
       <div class="formation-item">
         <div class="formation-date">2021 - 2023</div>
         <div class="formation-content">
-          <h2>Baccalauréat STI2D</h2>
-          <h3>Lycée Saint-Joseph</h3>
-          <p>Spécialisation en systèmes d'information et numérique</p>
+          <h2>Baccalauréat Technologique</h2>
+          <h3>STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)</h3>
+          <p>Lycée Saint-Martin, Angers</p>
           <ul class="formation-skills">
-            <li>Programmation</li>
-            <li>Réseaux</li>
-            <li>Électronique</li>
+            <li>Innovation Technologique</li>
+            <li>Ingénierie et Développement Durable</li>
+            <li>Physique-Chimie</li>
+            <li>Mathématiques</li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="competences-section">
-      <h2>Compétences Acquises</h2>
+      <h2>Compétences Techniques</h2>
       <div class="competences-grid">
         <div class="competence-card">
           <i class="fas fa-code"></i>
-          <h3>Programmation</h3>
+          <h3>Développement Web</h3>
           <ul>
             <li>HTML5 / CSS3</li>
             <li>JavaScript</li>
             <li>PHP</li>
-            <li>Python</li>
+            <li>React</li>
+            <li>Node.js</li>
           </ul>
         </div>
+
         <div class="competence-card">
           <i class="fas fa-database"></i>
-          <h3>Bases de Données</h3>
+          <h3>Bases de données</h3>
           <ul>
             <li>MySQL</li>
-            <li>PostgreSQL</li>
             <li>MongoDB</li>
+            <li>SQLite</li>
+            <li>Modélisation UML</li>
           </ul>
         </div>
+
         <div class="competence-card">
           <i class="fas fa-shield-alt"></i>
           <h3>Sécurité</h3>
           <ul>
-            <li>Cybersécurité</li>
-            <li>Protection des données</li>
+            <li>OWASP</li>
+            <li>Cryptographie</li>
             <li>Audit de sécurité</li>
+            <li>Bonnes pratiques</li>
+          </ul>
+        </div>
+
+        <div class="competence-card">
+          <i class="fas fa-tasks"></i>
+          <h3>Méthodologies</h3>
+          <ul>
+            <li>Agile / Scrum</li>
+            <li>Git / GitHub</li>
+            <li>DevOps</li>
+            <li>Tests unitaires</li>
           </ul>
         </div>
       </div>

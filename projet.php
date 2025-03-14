@@ -1,68 +1,84 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php
+$page_title = "Projets";
+$current_page = "projet";
+include 'header.php';
+?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projets - Mon Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
+<div class="container">
+  <section class="projet-section">
+    <div class="section-header">
+      <h2>Mes Projets</h2>
+      <p>Découvrez mes réalisations et projets personnels</p>
+    </div>
 
-<body>
-  <nav class="navbar">
-    <ul class="menu">
-      <li><a href="index.php">Accueil</a></li>
-      <li><a href="about.php">À propos</a></li>
-      <li><a href="ecole.php">Formation</a></li>
-      <li><a href="entreprise.php">Entreprise</a></li>
-      <li><a class="active" href="projet.php">Projets</a></li>
-      <li><a href="veille.php">Veille</a></li>
-      <li><a href="tableau.php">Tableau</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-    <section class="projet-section fade-in">
-      <h1>Mes Projets</h1>
-      <p class="section-intro">Découvrez mes différents projets, qu'ils soient académiques ou professionnels.</p>
-
-      <div class="projet-categories">
-        <a href="projet_cours.php" class="projet-category">
-          <i class="fas fa-graduation-cap"></i>
-          <h2>Projets Académiques</h2>
-          <p>Les projets réalisés pendant ma formation</p>
-        </a>
-        <a href="projet_entreprise.php" class="projet-category">
-          <i class="fas fa-briefcase"></i>
-          <h2>Projets Entreprise</h2>
-          <p>Les projets réalisés en stage</p>
-        </a>
+    <div class="projet-grid">
+      <!-- Projet 1 -->
+      <div class="projet-card fade-in">
+        <div class="projet-image">
+          <img src="img/projet1.jpg" alt="Projet 1">
+          <div class="projet-overlay">
+            <div class="projet-links">
+              <a href="#" class="projet-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+              <a href="#" class="projet-link"><i class="fab fa-github"></i> Code source</a>
+            </div>
+          </div>
+        </div>
+        <div class="projet-content">
+          <h3>Nom du Projet 1</h3>
+          <p>Description détaillée du projet et de ses fonctionnalités principales.</p>
+          <div class="projet-tags">
+            <span class="projet-tag">HTML</span>
+            <span class="projet-tag">CSS</span>
+            <span class="projet-tag">JavaScript</span>
+          </div>
+        </div>
       </div>
-    </section>
-  </div>
 
-  <button class="theme-toggle" aria-label="Basculer le mode sombre">
-    <i class="fas fa-moon"></i>
-  </button>
+      <!-- Projet 2 -->
+      <div class="projet-card fade-in">
+        <div class="projet-image">
+          <img src="img/projet2.jpg" alt="Projet 2">
+          <div class="projet-overlay">
+            <div class="projet-links">
+              <a href="#" class="projet-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+              <a href="#" class="projet-link"><i class="fab fa-github"></i> Code source</a>
+            </div>
+          </div>
+        </div>
+        <div class="projet-content">
+          <h3>Nom du Projet 2</h3>
+          <p>Description détaillée du projet et de ses fonctionnalités principales.</p>
+          <div class="projet-tags">
+            <span class="projet-tag">PHP</span>
+            <span class="projet-tag">MySQL</span>
+            <span class="projet-tag">Laravel</span>
+          </div>
+        </div>
+      </div>
 
-  <script src="script/theme.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, {
-        threshold: 0.1
-      });
+      <!-- Projet 3 -->
+      <div class="projet-card fade-in">
+        <div class="projet-image">
+          <img src="img/projet3.jpg" alt="Projet 3">
+          <div class="projet-overlay">
+            <div class="projet-links">
+              <a href="#" class="projet-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+              <a href="#" class="projet-link"><i class="fab fa-github"></i> Code source</a>
+            </div>
+          </div>
+        </div>
+        <div class="projet-content">
+          <h3>Nom du Projet 3</h3>
+          <p>Description détaillée du projet et de ses fonctionnalités principales.</p>
+          <div class="projet-tags">
+            <span class="projet-tag">React</span>
+            <span class="projet-tag">Node.js</span>
+            <span class="projet-tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
-      document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-    });
-  </script>
-</body>
-
-</html>
+<?php include 'footer.php'; ?>
