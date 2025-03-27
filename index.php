@@ -13,11 +13,11 @@ include 'header.php';
         Passionné par le développement web et les nouvelles technologies, je crée des expériences numériques innovantes et performantes.
       </p>
       <div class="cta-buttons">
-        <a href="about.php" class="btn">
+        <a href="about.php" class="btn btn-primary">
           <i class="fas fa-user"></i>
           À propos de moi
         </a>
-        <a href="projet.php" class="btn">
+        <a href="projet.php" class="btn btn-outline">
           <i class="fas fa-code"></i>
           Mes projets
         </a>
@@ -83,7 +83,7 @@ include 'header.php';
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn">Envoyer</button>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
       </form>
     </div>
   </div>

@@ -17,53 +17,44 @@ include 'header.php';
                 </div>
                 <p>Entreprise : <a href="https://www.econocom.com/fr" target="_blank" class="entreprise-link">ECONOCOM</a> (Prestataire pour la SNCF)</p>
                 <p>Poste : Technicien Niveau 1</p>
-                <p>Localisation : 10 chemin de vigneau, Saint-Herblain</p>
+                <p>Localisation : Saint-Herblain</p>
                 <p>Période : 01/09/2024 - 31/08/2025</p>
-                <p>Description : En tant que technicien niveau 1, je suis en charge du support utilisateur et de la maintenance informatique pour les agents de la SNCF. Mon rôle consiste à assurer le bon fonctionnement des outils informatiques et à apporter une assistance technique de premier niveau.</p>
+                <p>Description : En tant que technicien niveau 1, je suis en charge du support utilisateur et de la maintenance informatique pour les agents de la SNCF.</p>
             </div>
 
             <div class="missions-grid">
                 <div class="mission-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Outils et Technologies</h3>
+                    <h3><i class="fas fa-tools"></i> Outils et Technologies</h3>
                     <ul class="mission-list">
-                        <li>ServiceNow : Gestion des incidents et des demandes</li>
-                        <li>Active Directory : Gestion des comptes utilisateurs</li>
-                        <li>Prise en main à distance : Support utilisateur</li>
-                        <li>PowerTech : Identification et gestion des postes</li>
-                        <li>Vérification des identités du personnel SNCF</li>
+                        <li>ServiceNow : Gestion des incidents</li>
+                        <li>Active Directory : Gestion des comptes</li>
+                        <li>Prise en main à distance</li>
+                        <li>PowerTech : Gestion des postes</li>
                     </ul>
                 </div>
 
                 <div class="mission-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Projet Réalisé chez ECONOCOM</h3>
+                    <h3><i class="fas fa-code"></i> Projet Réalisé</h3>
                     <h4>Application de Gestion des Pauses</h4>
                     <ul class="mission-list">
-                        <li>Refonte complète de l'application de pause</li>
-                        <li>Développement d'une interface utilisateur intuitive</li>
-                        <li>Intégration avec les systèmes existants</li>
-                        <li>Tests et déploiement en production</li>
+                        <li>Refonte de l'application</li>
+                        <li>Interface utilisateur intuitive</li>
+                        <li>Intégration système</li>
+                        <li>Tests et déploiement</li>
                     </ul>
                     <a href="cahier_des_charges.pdf" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-file-alt"></i> Voir le Cahier des Charges
+                        <i class="fas fa-file-alt"></i> Cahier des Charges
                     </a>
                 </div>
 
                 <div class="mission-card">
-                    <i class="fas fa-tasks"></i>
-                    <h3>Missions Principales</h3>
+                    <h3><i class="fas fa-tasks"></i> Missions</h3>
                     <ul class="mission-list">
-                        <li>Support utilisateur de premier niveau</li>
-                        <li>Gestion des incidents informatiques</li>
-                        <li>Maintenance préventive et curative</li>
+                        <li>Support utilisateur</li>
+                        <li>Gestion des incidents</li>
+                        <li>Maintenance préventive</li>
                         <li>Formation des utilisateurs</li>
-                        <li>Documentation technique</li>
-                    </ul>
-                    <h3>Missions Secondaires</h3>
-                    <ul class="mission-list">
-                        <li>Développement d'application métier pour ECONOCOM</li>
-                        <li>Documentation technique de l'application de pause</li>
+                        <li>Développement d'application</li>
                     </ul>
                 </div>
             </div>
@@ -74,13 +65,12 @@ include 'header.php';
                     <h2>Compétences Acquises</h2>
                 </div>
                 <ul class="mission-list">
-                    <li>Maîtrise des outils de support informatique</li>
-                    <li>Gestion des incidents et des demandes</li>
-                    <li>Administration système (Active Directory)</li>
+                    <li>Outils de support informatique</li>
+                    <li>Gestion des incidents et demandes</li>
+                    <li>Administration système</li>
                     <li>Support utilisateur à distance</li>
-                    <li>Développement d'applications métier</li>
-                    <li>Travail en équipe et communication</li>
-                    <li>Gestion des priorités et respect des SLA</li>
+                    <li>Développement d'applications</li>
+                    <li>Travail en équipe</li>
                 </ul>
             </div>
         </div>
