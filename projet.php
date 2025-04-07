@@ -15,7 +15,7 @@ include 'header.php';
       <!-- Projet 1 -->
       <div class="projet-card fade-in">
         <div class="projet-image">
-          <img src="img/projet1.jpg" alt="Projet 1">
+          <img src="img/BienvenueFormation.png" alt="Projet 1">
           <div class="projet-overlay">
             <div class="projet-links">
               <a href="#" class="projet-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
