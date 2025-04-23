@@ -29,15 +29,15 @@ include 'header.php';
       </div>
 
       <div class="formation-item">
-        <div class="formation-date">2021 - 2023</div>
+        <div class="formation-date">2022 - 2023</div>
         <div class="formation-content">
-          <h2>Baccalauréat Technologique</h2>
-          <h3>STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)</h3>
-          <p>Lycée Saint-Martin, Angers</p>
+          <h2>Licence Mathématiques-Informatique</h2>
+          <h3>Parcours Informatique</h3>
+          <p>Universite Picardie Jules Verne, Amiens</p>
           <ul class="formation-skills">
-            <li>Innovation Technologique</li>
-            <li>Ingénierie et Développement Durable</li>
-            <li>Physique-Chimie</li>
+            <li>Programmation</li>
+            <li>Developpement web et réseau</li>
+            <li>Algo avancé</li>
             <li>Mathématiques</li>
           </ul>
         </div>
@@ -64,7 +64,7 @@ include 'header.php';
           <h3>Bases de données</h3>
           <ul>
             <li>MySQL</li>
-            <li>MongoDB</li>
+            <li>MariaDB</li>
             <li>SQLite</li>
             <li>Modélisation UML</li>
           </ul>
@@ -87,7 +87,6 @@ include 'header.php';
           <ul>
             <li>Agile / Scrum</li>
             <li>Git / GitHub</li>
-            <li>DevOps</li>
             <li>Tests unitaires</li>
           </ul>
         </div>
