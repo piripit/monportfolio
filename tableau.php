@@ -4,106 +4,60 @@ $page_title = 'Tableau de Compétences';
 include 'header.php';
 ?>
 
-<div class="container">
-    <section class="skills-section fade-in">
-        <h1>Tableau de Compétences</h1>
-        <p class="section-intro">Un aperçu complet de mes compétences en développement web</p>
-
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h2>Frontend</h2>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>HTML5</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>CSS3</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>JavaScript</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
+<div id="synthese" style="margin-top: 2rem;">
+    <div class="container">
+        <h2 class="text-center">TABLEAU DE SYNTHÈSE</h2>
+        <div class="tableau-cartes">
+            <div class="carte">
+                <h3>Gestion de pause</h3>
+                <ul>
+                    <li>Gérer le patrimoine informatique: <span class="competence"></span></li>
+                    <hr>
+                    <li>Répondre aux incidents et aux demandes d'assistance et d'évolution: <span class="competence"></span></li>
+                    <hr>
+                    <li>Développer la présence en ligne de l'organisation: <span class="competence">&#10006;</span></li>
+                    <hr>
+                    <li>Travailler en mode projet: <span class="competence">&#10006;</span></li>
+                    <hr>
+                    <li>Mettre à disposition des utilisateurs un service informatique: <span class="competence">&#10006;</span></li>
+                    <hr>
+                    <li>Organiser son développement professionnel: <span class="competence">&#10006;</span></li>
+                </ul>
             </div>
-
-            <div class="skill-category">
-                <h2>Backend</h2>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>PHP</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>MySQL</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>Node.js</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
+            <div class="carte">
+                <h3>Clickn'eat</h3>
+                <ul>
+                    <li>Gérer le patrimoine informatique: <span class="competence"></span></li>
+                    <hr>
+                    <li>Répondre aux incidents et aux demandes d'assistance et d'évolution: <span class="competence"></span></li>
+                    <hr>
+                    <li>Développer la présence en ligne de l'organisation: <span class="competence">&#10006;</span></li>
+                    <hr>
+                    <li>Travailler en mode projet: <span class="competence"></span></li>
+                    <hr>
+                    <li>Mettre à disposition des utilisateurs un service informatique: <span class="competence">&#10006;</span></li>
+                    <hr>
+                    <li>Organiser son développement professionnel: <span class="competence">&#10006;</span></li>
+                </ul>
             </div>
-
-            <div class="skill-category">
-                <h2>Outils & Frameworks</h2>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>React</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>Laravel</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>Git</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
+            <div class="carte">
+                <h3>Welcome Training</h3>
+                <ul>
+                    <li>Gérer le patrimoine informatique: <span class="competence"></span></li>
+                    <hr>
+                    <li>Répondre aux incidents et aux demandes d'assistance et d'évolution: <span class="competence"></span></li>
+                    <hr>
+                    <li>Développer la présence en ligne de l'organisation: <span class="competence">&#10006;</span></li>
+                    <hr>
+                    <li>Travailler en mode projet: <span class="competence"></span></li>
+                    <hr>
+                    <li>Mettre à disposition des utilisateurs un service informatique: <span class="competence">&#10006;</span></li>
+                    <hr>
+                    <li>Organiser son développement professionnel: <span class="competence">&#10006;</span></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
 </div>
 
 <?php include 'footer.php'; ?>

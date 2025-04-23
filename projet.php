@@ -24,7 +24,7 @@ include 'header.php';
       <!-- Projet 1 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="assets/images/projet1.jpg" alt="Projet 1">
+          <img src="img/pause.PNG" alt="Projet 1">
           <div class="project-overlay">
             <div class="project-links">
               <a href="#" class="project-link" title="Voir le site">
@@ -37,13 +37,16 @@ include 'header.php';
           </div>
         </div>
         <div class="project-content">
-          <h3>Nom du Projet 1</h3>
-          <p>Description détaillée du projet et de ses fonctionnalités principales.</p>
+          <h3>Gestion de pause</h3>
+          <p>Le Système de Gestion des Pauses est une application web conçue pour gérer les pauses des employés dans un environnement de travail.
+            Il permet aux employés de réserver des créneaux de pause,
+            d'activer leurs pauses au moment de les prendre,
+            et aux administrateurs de suivre l'utilisation des pauses en temps réel..</p>
           <div class="project-tags">
-            <span class="project-tag">HTML5</span>
-            <span class="project-tag">CSS3</span>
-            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">HTML/CSS/JS</span>
+            <span class="project-tag">Bootstrap</span>
             <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
           </div>
         </div>
       </div>
