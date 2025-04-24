@@ -27,7 +27,7 @@ include 'header.php';
           <img src="img/pause.PNG" alt="Projet 1">
           <div class="project-overlay">
             <div class="project-links">
-              <a href="#" class="project-link" title="Voir le site">
+              <a href="description_gestion_pause.php" class="project-link" title="Voir le site">
                 <i class="fas fa-external-link-alt"></i>
               </a>
               <a href="https://github.com/piripit/pause" class="project-link" title="Voir le code">
@@ -56,7 +56,7 @@ include 'header.php';
           <img src="img/BienvenuFormation.PNG" alt="Projet 2">
           <div class="project-overlay">
             <div class="project-links">
-              <a href="#" class="project-link" title="Voir le site">
+              <a href="#" class="project-link" title="Description">
                 <i class="fas fa-external-link-alt"></i>
               </a>
               <a href="https://github.com/piripit/MDS" class="project-link" title="Voir le code">
