@@ -1,12 +1,3 @@
-var typed = new Typed("#textDefile", {
-  strings: ["FIATUWO", "Moriel"],
-  loop: true,
-  backSpeed: 100,
-  startDelay: 100,
-  typeSpeed: 50,
-  showCursor: true,
-  cursorChar: "|",
-});
 
 function openModal(modalId) {
   const modal = document.getElementById(modalId);

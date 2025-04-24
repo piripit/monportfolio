@@ -30,7 +30,7 @@ include 'header.php';
               <a href="#" class="project-link" title="Voir le site">
                 <i class="fas fa-external-link-alt"></i>
               </a>
-              <a href="#" class="project-link" title="Voir le code">
+              <a href="https://github.com/piripit/pause" class="project-link" title="Voir le code">
                 <i class="fab fa-github"></i>
               </a>
             </div>
@@ -38,10 +38,9 @@ include 'header.php';
         </div>
         <div class="project-content">
           <h3>Gestion de pause</h3>
-          <p>Le Système de Gestion des Pauses est une application web conçue pour gérer les pauses des employés dans un environnement de travail.
-            Il permet aux employés de réserver des créneaux de pause,
-            d'activer leurs pauses au moment de les prendre,
-            et aux administrateurs de suivre l'utilisation des pauses en temps réel..</p>
+          <p>Le Système de Gestion des Pauses est une application web pour organiser les pauses des employés.
+            Les employés réservent et activent leurs pauses,
+            tandis que les administrateurs les suivent en temps réel.</p>
           <div class="project-tags">
             <span class="project-tag">HTML/CSS/JS</span>
             <span class="project-tag">Bootstrap</span>
@@ -54,25 +53,31 @@ include 'header.php';
       <!-- Projet 2 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="assets/images/projet2.jpg" alt="Projet 2">
+          <img src="img/BienvenuFormation.PNG" alt="Projet 2">
           <div class="project-overlay">
             <div class="project-links">
               <a href="#" class="project-link" title="Voir le site">
                 <i class="fas fa-external-link-alt"></i>
               </a>
-              <a href="#" class="project-link" title="Voir le code">
+              <a href="https://github.com/piripit/MDS" class="project-link" title="Voir le code">
                 <i class="fab fa-github"></i>
               </a>
             </div>
           </div>
         </div>
         <div class="project-content">
-          <h3>Nom du Projet 2</h3>
-          <p>Description détaillée du projet et de ses fonctionnalités principales.</p>
+          <h3>Bienvenue formation</h3>
+          <p>
+            Bienvenu Formation est une application web pour gérer les présences dans un établissement scolaire.
+            Les élèves signent en ligne,
+            les enseignants suivent les signatures,
+            et les administrateurs gèrent l’ensemble.
+          </p>
           <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">HTML/CSS/JS</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">Bootstrap</span>
           </div>
         </div>
       </div>
@@ -93,9 +98,13 @@ include 'header.php';
           </div>
         </div>
         <div class="project-content">
-          <h3>Nom du Projet 3</h3>
-          <p>Description détaillée du projet et de ses fonctionnalités principales.</p>
+          <h3>Clickn'eat</h3>
+          <p>Click’n Eat est une application web qui facilite la gestion des restaurants en ligne.
+            Elle permet de suivre menus,
+            commandes et réservations en temps réel,
+            pour une organisation fluide et adaptée aux clients.</p>
           <div class="project-tags">
+            <span class="project-tag">HTML/CSS/JS</span>
             <span class="project-tag">Laravel</span>
             <span class="project-tag">MySQL</span>
             <span class="project-tag">Bootstrap</span>

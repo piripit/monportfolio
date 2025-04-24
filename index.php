@@ -34,7 +34,7 @@ include 'header.php';
 <section class="skills-section fade-in">
   <div class="container">
     <div class="section-header">
-      <h2>Mes Compétences</h2>
+      <h2>Mon savoir faire!!!</h2>
       <div class="title-bar"></div>
       <p class="section-description">
         Un ensemble de compétences techniques et professionnelles au service de vos projets

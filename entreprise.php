@@ -42,8 +42,8 @@ include 'header.php';
                         <li>Intégration système</li>
                         <li>Tests et déploiement</li>
                     </ul>
-                    <a href="cahier_des_charges.pdf" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-file-alt"></i> Cahier des Charges
+                    <a href="projet.php" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-file-alt"></i> Voir réalisation
                     </a>
                 </div>
 
