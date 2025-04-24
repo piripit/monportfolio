@@ -67,23 +67,23 @@ include 'header.php';
                     <tbody>
                         <tr>
                             <td>Documentation utilisateur</td>
-                            <td><a href="fichier/guide-complète.md" target="_blank">Voir</a></td>
+                            <td><a href="fichier/guide-complète-pause.md" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Diagramme de Gantt</td>
-                            <td><a href="docs/diagramme-gantt.pdf" target="_blank">Voir</a></td>
+                            <td><a href="fichier/diagramme-gantt-pause.pdf" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Modèle base de données</td>
-                            <td><a href="fichier/modèle_bdd.pdf" target="_blank">Accéder</a></td>
+                            <td><a href="fichier/modèle_bdd-pause.pdf" target="_blank">Accéder</a></td>
                         </tr>
                         <tr>
                             <td>Guide d'utilisation admin</td>
-                            <td><a href="fichier/guide-utilisation-admin.md" target="_blank">Voir</a></td>
+                            <td><a href="fichier/guide-utilisation-admin-pause.md" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Guide d'utilisation employés</td>
-                            <td><a href="fichier/guide-utilisation-employé.md" target="_blank">Voir</a></td>
+                            <td><a href="fichier/guide-utilisation-employé-pause.md" target="_blank">Voir</a></td>
                         </tr>
                     </tbody>
                 </table>

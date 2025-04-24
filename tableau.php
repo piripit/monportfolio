@@ -7,6 +7,11 @@ include 'header.php';
 <div id="synthese" style="margin-top: 2rem;">
     <div class="container">
         <h2 class="text-center">TABLEAU DE SYNTHÈSE</h2>
+        <div class="text-center mb-4">
+            <a href="fichier/tableau-de-synthèse.pdf" class="btn btn-primary" target="_blank">
+                <i class="fas fa-eye"></i> Consulter le PDF
+            </a>
+        </div>
         <div class="tableau-cartes">
             <div class="carte">
                 <h3>Gestion de pause</h3>
