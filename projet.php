@@ -85,13 +85,13 @@ include 'header.php';
       <!-- Projet 3 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="assets/images/projet3.jpg" alt="Projet 3">
+          <img src="img/clickn-eat.PNG" alt="Projet 3">
           <div class="project-overlay">
             <div class="project-links">
-              <a href="#" class="project-link" title="Voir le site">
+              <a href="description_clickneat.php" class="project-link" title="Voir le site">
                 <i class="fas fa-external-link-alt"></i>
               </a>
-              <a href="#" class="project-link" title="Voir le code">
+              <a href="https://github.com/piripit/clickn-eat" class="project-link" title="Voir le code">
                 <i class="fab fa-github"></i>
               </a>
             </div>
