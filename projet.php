@@ -56,7 +56,7 @@ include 'header.php';
           <img src="img/BienvenuFormation.PNG" alt="Projet 2">
           <div class="project-overlay">
             <div class="project-links">
-              <a href="#" class="project-link" title="Description">
+              <a href="description_BienvenuFormation.php" class="project-link" title="Description">
                 <i class="fas fa-external-link-alt"></i>
               </a>
               <a href="https://github.com/piripit/MDS" class="project-link" title="Voir le code">

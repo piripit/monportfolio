@@ -55,6 +55,13 @@ include 'header.php';
                     <li>Interface admin temps réel</li>
                     <li>Documentation complète + diagramme Gantt</li>
                 </ul>
+                <h4 class="mt-4">🧑‍💻 Difficultés rencontrées</h4>
+                <ul>
+                    <li>Mettre en place les règles métiers</li>
+                    <li>Gestion des signatures</li>
+                    <li>Comment gerer les erreurs de connexion</li>
+                    <li>Gérer le statut de la pause( sur la page de consultation des pauses)</li>
+                </ul>
 
                 <h4 class="mt-4">📚 Documents Disponibles</h4>
                 <table class="table table-striped">
