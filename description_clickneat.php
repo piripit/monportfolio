@@ -85,8 +85,8 @@ include 'header.php';
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Documentation utilisateur</td>
-                            <td><a href="fichier/guide-complète-pause.md" target="_blank">Voir</a></td>
+                            <td>Documentation complète</td>
+                            <td><a href="fichier/documentation-complète-clikneat.pdf" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Diagramme de Gantt</td>
@@ -94,7 +94,7 @@ include 'header.php';
                         </tr>
                         <tr>
                             <td>Modèle base de données</td>
-                            <td><a href="fichier/modèle_bdd-pause.pdf" target="_blank">Accéder</a></td>
+                            <td><a href="img/modèle-bdd-clickneat.PNG" target="_blank">Accéder</a></td>
                         </tr>
                         <tr>
                             <td>Guide d'utilisation restaurateurs</td>
