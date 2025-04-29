@@ -7,63 +7,75 @@ include 'header.php';
 <div class="container">
     <section class="veille-section fade-in">
         <h1>Veille Technologique</h1>
-        <p class="section-intro">Restez informé des dernières tendances et innovations dans le développement web</p>
+        <div class="veille-intro">
+            <h2>Qu'est-ce que la veille technologique ?</h2>
+            <p>La veille technologique est un processus continu de surveillance et d'analyse des évolutions technologiques dans un domaine spécifique. Elle permet de rester informé des dernières innovations, tendances et bonnes pratiques, afin d'anticiper les changements et de maintenir ses compétences à jour.</p>
+        </div>
 
         <div class="veille-grid">
+            <!-- Laravel -->
             <article class="veille-card">
                 <div class="veille-image">
-                    <img src="img/veille1.jpg" alt="Article 1">
-                    <span class="veille-category">Frontend</span>
+                    <img src="img/laravel.png" alt="Laravel">
+                    <span class="veille-category">Framework PHP</span>
                 </div>
                 <div class="veille-content">
-                    <h3>Les dernières tendances CSS en 2024</h3>
-                    <p>Découvrez les nouvelles fonctionnalités CSS qui vont révolutionner le développement web en 2024.</p>
-                    <div class="veille-meta">
-                        <span>15 Mars 2024</span>
-                        <span>CSS Tricks</span>
+                    <h3>Laravel</h3>
+                    <p>Framework PHP moderne et élégant pour le développement web.</p>
+                    <div class="veille-tools">
+                        <h4>Outils de veille :</h4>
+                        <ul>
+                            <li><a href="https://laravel-news.com/" target="_blank">Laravel News</a> - Blog officiel</li>
+                            <li><a href="https://github.com/laravel/laravel" target="_blank">GitHub Laravel</a> - Code source</li>
+                            <li><a href="https://laracasts.com/" target="_blank">Laracasts</a> - Tutoriels vidéo</li>
+                            <li><a href="https://packagist.org/" target="_blank">Packagist</a> - Bibliothèques</li>
+                            <li><a href="https://twitter.com/laravelphp" target="_blank">Twitter Laravel</a> - Actualités</li>
+                        </ul>
                     </div>
-                    <a href="#" class="veille-link">
-                        Lire l'article
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
             </article>
 
+            <!-- Bootstrap -->
             <article class="veille-card">
                 <div class="veille-image">
-                    <img src="img/veille2.jpg" alt="Article 2">
-                    <span class="veille-category">Backend</span>
+                    <img src="img/bootstrap.png" alt="Bootstrap">
+                    <span class="veille-category">Framework CSS</span>
                 </div>
                 <div class="veille-content">
-                    <h3>PHP 8.3 : Les nouvelles fonctionnalités</h3>
-                    <p>Un aperçu complet des nouvelles fonctionnalités et améliorations de performance dans PHP 8.3.</p>
-                    <div class="veille-meta">
-                        <span>10 Mars 2024</span>
-                        <span>PHP.net</span>
+                    <h3>Bootstrap</h3>
+                    <p>Framework CSS populaire pour le développement d'interfaces web responsives.</p>
+                    <div class="veille-tools">
+                        <h4>Outils de veille :</h4>
+                        <ul>
+                            <li><a href="https://getbootstrap.com/docs/" target="_blank">Documentation Bootstrap</a></li>
+                            <li><a href="https://github.com/twbs/bootstrap" target="_blank">GitHub Bootstrap</a></li>
+                            <li><a href="https://blog.getbootstrap.com/" target="_blank">Blog Bootstrap</a></li>
+                            <li><a href="https://bootswatch.com/" target="_blank">Bootswatch</a> - Thèmes</li>
+                            <li><a href="https://expo.getbootstrap.com/" target="_blank">Bootstrap Expo</a> - Exemples</li>
+                        </ul>
                     </div>
-                    <a href="#" class="veille-link">
-                        Lire l'article
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
             </article>
 
+            <!-- Intelligence Artificielle -->
             <article class="veille-card">
                 <div class="veille-image">
-                    <img src="img/veille3.jpg" alt="Article 3">
-                    <span class="veille-category">Sécurité</span>
+                    <img src="img/AI.png" alt="Intelligence Artificielle">
+                    <span class="veille-category">IA</span>
                 </div>
                 <div class="veille-content">
-                    <h3>Les meilleures pratiques de sécurité web</h3>
-                    <p>Guide complet sur les dernières tendances en matière de sécurité web et protection des données.</p>
-                    <div class="veille-meta">
-                        <span>5 Mars 2024</span>
-                        <span>OWASP</span>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Technologies et applications de l'IA dans le développement web et mobile.</p>
+                    <div class="veille-tools">
+                        <h4>Outils de veille :</h4>
+                        <ul>
+                            <li><a href="https://openai.com/blog" target="_blank">OpenAI Blog</a></li>
+                            <li><a href="https://www.deeplearning.ai/" target="_blank">DeepLearning.AI</a></li>
+                            <li><a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a></li>
+                            <li><a href="https://pytorch.org/" target="_blank">PyTorch</a></li>
+                            <li><a href="https://www.kaggle.com/" target="_blank">Kaggle</a> - Communauté</li>
+                        </ul>
                     </div>
-                    <a href="#" class="veille-link">
-                        Lire l'article
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
                 </div>
             </article>
         </div>

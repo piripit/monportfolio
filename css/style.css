@@ -400,10 +400,28 @@ p {
     padding: 2rem 0;
 }
 
+.veille-intro {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.veille-intro h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.veille-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
 .veille-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
@@ -457,20 +475,94 @@ p {
 .veille-content h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
+    color: var(--primary-color);
 }
 
 .veille-content p {
-    flex: 1;
     margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
-.veille-meta {
-    display: flex;
-    justify-content: space-between;
+.veille-tools {
     margin-top: auto;
+}
+
+.veille-tools h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--text-color);
-    opacity: 0.8;
-    font-size: 0.875rem;
+}
+
+.veille-tools ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.veille-tools li {
+    margin-bottom: 0.5rem;
+}
+
+.veille-tools a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+    display: block;
+    padding: 0.25rem 0;
+}
+
+.veille-tools a:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .veille-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .veille-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .veille-intro p {
+        font-size: 0.95rem;
+    }
+
+    .veille-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .veille-section {
+        padding: 1.5rem 0;
+    }
+
+    .veille-intro {
+        margin-bottom: 2rem;
+    }
+
+    .veille-intro h2 {
+        font-size: 1.3rem;
+    }
+
+    .veille-content {
+        padding: 1rem;
+    }
+
+    .veille-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .veille-tools h4 {
+        font-size: 0.9rem;
+    }
+
+    .veille-tools a {
+        font-size: 0.85rem;
+    }
 }
 
 /* Tableau Section */
