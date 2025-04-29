@@ -90,19 +90,19 @@ include 'header.php';
                         </tr>
                         <tr>
                             <td>Diagramme de Gantt</td>
-                            <td><a href="fichier/diagramme-gantt-pause.pdf" target="_blank">Voir</a></td>
+                            <td><a href="img/gant-clickneat.PNG" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Modèle base de données</td>
                             <td><a href="fichier/modèle_bdd-pause.pdf" target="_blank">Accéder</a></td>
                         </tr>
                         <tr>
-                            <td>Guide d'utilisation admin</td>
-                            <td><a href="fichier/guide-utilisation-admin-pause.md" target="_blank">Voir</a></td>
+                            <td>Guide d'utilisation restaurateurs</td>
+                            <td><a href="fichier/guide-utilisateur-restaurateur-clickneat.pdf" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
-                            <td>Guide d'utilisation employés</td>
-                            <td><a href="fichier/guide-utilisation-employé-pause.md" target="_blank">Voir</a></td>
+                            <td>Guide d'utilisation clients</td>
+                            <td><a href="fichier/guide-utilisateur-client-clikneat.pdf" target="_blank">Voir</a></td>
                         </tr>
                     </tbody>
                 </table>
