@@ -37,11 +37,11 @@ include 'header.php';
                     <li>Supervision en temps réel</li>
                     <li>Historique des pauses</li>
                 </ul>
-                <a href="fichier/cahier-des-charges.pdf" class="btn btn-outline-primary mt-2" target="_blank">📄 Voir le Cahier des Charges</a>
+                <a href="fichier/cdc-pause.pdf" class="btn btn-outline-primary mt-2" target="_blank">📄 Voir le Cahier des Charges</a>
 
                 <h4 class="mt-4">🛠️ Technologies Utilisées</h4>
                 <ul>
-                    <li><strong>Langage :</strong> PHP Orienté Objet</li>
+                    <li><strong>Langage :</strong> PHP</li>
                     <li><strong>Base de Données :</strong> MySQL</li>
                     <li><strong>Interface :</strong> HTML / CSS / Bootstrap</li>
                     <li><strong>IDE :</strong> Visual Studio Code</li>
@@ -58,7 +58,6 @@ include 'header.php';
                 <h4 class="mt-4">🧑‍💻 Difficultés rencontrées</h4>
                 <ul>
                     <li>Mettre en place les règles métiers</li>
-                    <li>Gestion des signatures</li>
                     <li>Comment gerer les erreurs de connexion</li>
                     <li>Gérer le statut de la pause( sur la page de consultation des pauses)</li>
                 </ul>
@@ -73,8 +72,8 @@ include 'header.php';
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Documentation utilisateur</td>
-                            <td><a href="fichier/guide-complète-pause.md" target="_blank">Voir</a></td>
+                            <td>Documentation complète</td>
+                            <td><a href="fichier/documentation-complète-pauses.pdf" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Diagramme de Gantt</td>
@@ -86,11 +85,11 @@ include 'header.php';
                         </tr>
                         <tr>
                             <td>Guide d'utilisation admin</td>
-                            <td><a href="fichier/guide-utilisation-admin-pause.md" target="_blank">Voir</a></td>
+                            <td><a href="fichier/guide-utilisation-admin.pdf" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Guide d'utilisation employés</td>
-                            <td><a href="fichier/guide-utilisation-employé-pause.md" target="_blank">Voir</a></td>
+                            <td><a href="fichier/guide-utilisation-employé.pdf" target="_blank">Voir</a></td>
                         </tr>
                     </tbody>
                 </table>

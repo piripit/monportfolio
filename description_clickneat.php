@@ -30,11 +30,16 @@ include 'header.php';
                     de réserver une table dans un restaurant et de commander leur repas à l'avance,
                     pour une expérience sans attente.</p>
                 <ul>
+                    <li>Gestion des restaurants</li>
+                    <li>Gestion des menus</li>
+                    <li>Gestion des commandes</li>
+                    <li>Gestion des tables</li>
+                    <li>Gestion des clients</li>
                     <li>Réservation de table</li>
                     <li>Commande de repas</li>
                     <li>Historique des commandes</li>
                 </ul>
-                <a href="fichier/cahier-des-charges.pdf" class="btn btn-outline-primary mt-2" target="_blank">📄 Voir le Cahier des Charges</a>
+                <a href="fichier/cdc-clickneat.pdf" class="btn btn-outline-primary mt-2" target="_blank">📄 Voir le Cahier des Charges</a>
 
                 <h4 class="mt-4">🛠️ Technologies Utilisées</h4>
                 <ul>
@@ -58,6 +63,16 @@ include 'header.php';
                     <li>Règles métiers : réservation de table, commande de repas, historique des commandes</li>
                     <li>Interface client et restaurateur</li>
                     <li>Documentation complète + diagramme Gantt</li>
+                </ul>
+                <h4 class="mt-4">🧑‍💻 Difficultés rencontrées</h4>
+                <ul>
+                    <li>Mettre en place les règles métiers</li>
+                    <li>Comment gerer les erreurs de connexion</li>
+                    <li>Gestion des tables</li>
+                    <li>Gestion des menus</li>
+                    <li>Gestion des commandes</li>
+                    <li>Gestion des restaurants</li>
+                    <li>Gestion des réservations</li>
                 </ul>
 
                 <h4 class="mt-4">📚 Documents Disponibles</h4>
@@ -94,9 +109,11 @@ include 'header.php';
 
                 <h4 class="mt-4">🔗 Fonctionnalités principales</h4>
                 <ul>
+                    <li>✅ Authentification utilisateur</li>
                     <li>✅ Réservation de table</li>
                     <li>✅ Commande de repas</li>
                     <li>✅ Historique des commandes</li>
+                    <li>✅ Choix du restaurant et menu</li>
                 </ul>
 
                 <h4 class="mt-4">📷 Aperçu de l'interface</h4>

@@ -41,7 +41,7 @@ include 'header.php';
                     <li>gestion de l'historique des signatures</li>
                     <li>Interface admin temps réel</li>
                 </ul>
-                <a href="fichier/cahier-des-charges.pdf" class="btn btn-outline-primary mt-2" target="_blank">📄 Voir le Cahier des Charges</a>
+                <a href="fichier/cdc-BF.pdf" class="btn btn-outline-primary mt-2" target="_blank">📄 Voir le Cahier des Charges</a>
 
                 <h4 class="mt-4">🛠️ Technologies Utilisées</h4>
                 <ul>
