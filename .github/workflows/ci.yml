@@ -43,18 +43,12 @@ jobs:
             echo "Mise à jour du code..."
             cd $ROOT_DIR
 
-            # Vérification si c'est un dépôt Git
-            if [ ! -d ".git" ]; then
-              echo "Initialisation du dépôt Git..."
-              sudo -u debian git init
-              sudo -u debian git remote add origin https://github.com/${{ github.repository }}.git
-            fi
-
-            echo "État du dépôt Git avant pull :"
-            git status
-            sudo -u debian git pull origin master
-            echo "État du dépôt Git après pull :"
-            git status
+            # Forcer la mise à jour
+            echo "Forçage de la mise à jour..."
+            sudo git fetch origin
+            sudo git reset --hard origin/master
+            sudo git clean -fd
+            sudo git pull origin master
 
             # Configuration finale des permissions
             echo "Configuration finale des permissions..."
