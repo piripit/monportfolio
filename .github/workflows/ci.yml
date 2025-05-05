@@ -15,5 +15,18 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            cd ${{ secrets.PROJECT_PATH }}
-            sudo git pull origin master
+            cd /var/www/html/portfolio
+            git pull origin master
+            # Vérification que le dossier existe
+            if [ ! -d "/var/www/html/portfolio" ]; then
+              echo "Le dossier du projet n'existe pas"
+              exit 1
+            fi
+            # Vérification des permissions
+            if [ ! -w "/var/www/html/portfolio" ]; then
+              echo "Pas de permission d'écriture sur le dossier"
+              exit 1
+            fi
+            # Mise à jour des permissions si nécessaire
+            sudo chown -R $USER:$USER /var/www/html/portfolio
+            sudo chmod -R 755 /var/www/html/portfolio
