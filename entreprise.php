@@ -43,7 +43,7 @@ include 'header.php';
                         <li>Tests et déploiement</li>
                     </ul>
                     <a href="description_gestion_pause.php" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-file-alt"></i> Voir réalisation
+                        <i class="fas fa-file-alt"></i> Voir le projet
                     </a>
                 </div>
 
