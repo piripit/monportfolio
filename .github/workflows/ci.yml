@@ -15,18 +15,27 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            cd /var/www/html/portfolio
-            git pull origin master
-            # Vérification que le dossier existe
+            # Configuration de Git pour accepter le répertoire
+            sudo git config --global --add safe.directory /var/www/html/portfolio
+
+            # Vérification et création du répertoire si nécessaire
             if [ ! -d "/var/www/html/portfolio" ]; then
-              echo "Le dossier du projet n'existe pas"
-              exit 1
+              sudo mkdir -p /var/www/html/portfolio
             fi
+
+            # Configuration des permissions de base
+            sudo chown -R debian:www-data /var/www/html/portfolio
+            sudo chmod -R 775 /var/www/html/portfolio
+
+            # Mise à jour du code
+            cd /var/www/html/portfolio
+            sudo -u debian git pull origin master
+
+            # Configuration finale des permissions
+            sudo find /var/www/html/portfolio -type d -exec chmod 775 {} \;
+            sudo find /var/www/html/portfolio -type f -exec chmod 664 {} \;
+            sudo chmod -R g+s /var/www/html/portfolio
+
             # Vérification des permissions
-            if [ ! -w "/var/www/html/portfolio" ]; then
-              echo "Pas de permission d'écriture sur le dossier"
-              exit 1
-            fi
-            # Mise à jour des permissions si nécessaire
-            sudo chown -R $USER:$USER /var/www/html/portfolio
-            sudo chmod -R 755 /var/www/html/portfolio
+            echo "Vérification des permissions :"
+            ls -la /var/www/html/portfolio
