@@ -16,11 +16,10 @@
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p>Email: yaovifia19@gmail.com</p>
-                    <p>Téléphone: +33 6 XX XX XX XX</p>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/dashboard" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="http://linkedin.com/in/y-moriel-fiatuwo-51544a225" target="_blank"><i class="fab fa-linkedin"></i></a>
+
                     </div>
                 </div>
                 <div class="footer-section">
