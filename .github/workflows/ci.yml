@@ -29,21 +29,15 @@ jobs:
             echo "État actuel du répertoire :"
             ls -la $ROOT_DIR
 
+            # Sauvegarde des permissions actuelles
+            echo "Sauvegarde des permissions actuelles..."
+            sudo chown -R debian:www-data $ROOT_DIR
+            sudo chmod -R 775 $ROOT_DIR
+
             # Configuration de Git
             echo "Configuration de Git..."
             sudo git config --global --add safe.directory $ROOT_DIR
             git config --global --list
-
-            # Vérification et création du répertoire
-            if [ ! -d "$ROOT_DIR" ]; then
-              echo "Création du répertoire..."
-              sudo mkdir -p $ROOT_DIR
-            fi
-
-            # Configuration des permissions
-            echo "Configuration des permissions..."
-            sudo chown -R debian:www-data $ROOT_DIR
-            sudo chmod -R 775 $ROOT_DIR
 
             # Mise à jour du code
             echo "Mise à jour du code..."
@@ -79,6 +73,12 @@ jobs:
             echo "Vérification des fichiers PHP :"
             ls -la $ROOT_DIR/*.php
 
+            # Vérification des permissions
+            echo "Vérification des permissions :"
+            sudo ls -la $ROOT_DIR
+            sudo ls -la $ROOT_DIR/css
+            sudo ls -la $ROOT_DIR/img
+
             # Vérification de la configuration Nginx
             echo "Vérification de la configuration Nginx :"
             sudo nginx -t
@@ -92,5 +92,9 @@ jobs:
             # Vérification du statut de Nginx
             echo "Statut de Nginx :"
             sudo systemctl status nginx
+
+            # Vérification des logs Nginx
+            echo "Dernières lignes des logs Nginx :"
+            sudo tail -n 20 /var/log/nginx/error.log
 
             echo "=== Fin du déploiement ==="
