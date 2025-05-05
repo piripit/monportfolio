@@ -82,7 +82,7 @@ include 'header.php';
     <!-- Section compétences -->
     <section class="skills-section fade-in">
         <div class="section-title">
-            <h2>Compétences & Expérience</h2>
+            <h2>Savoir faire & Expérience</h2>
             <div class="title-bar"></div>
         </div>
 
