@@ -37,8 +37,7 @@ include 'header.php';
           <ul class="formation-skills">
             <li>Programmation</li>
             <li>Developpement web et réseau</li>
-            <li>Algo avancé</li>
-            <li>Mathématiques</li>
+            <li>Mathématiques avancées</li>
           </ul>
         </div>
       </div>
@@ -51,9 +50,10 @@ include 'header.php';
           <i class="fas fa-code"></i>
           <h3>Développement Web</h3>
           <ul>
-            <li>HTML5 / CSS3</li>
-            <li>JavaScript</li>
+            <li>HTML/CSS/JavaScript</li>
+            <li>Bootstrap</li>
             <li>PHP</li>
+            <li>Laravel</li>
             <li>React</li>
             <li>Node.js</li>
           </ul>
@@ -74,8 +74,6 @@ include 'header.php';
           <i class="fas fa-shield-alt"></i>
           <h3>Sécurité</h3>
           <ul>
-            <li>OWASP</li>
-            <li>Cryptographie</li>
             <li>Audit de sécurité</li>
             <li>Bonnes pratiques</li>
           </ul>
