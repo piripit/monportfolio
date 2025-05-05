@@ -115,7 +115,7 @@ include 'header.php';
       <!-- Projet 4 -->
       <div class="project-card">
         <div class="project-image">
-          <img src="assets/images/projet4.jpg" alt="Projet 4">
+          <img src="img/portfolio.jpg" alt="Projet 4">
           <div class="project-overlay">
             <div class="project-links">
               <a href="#" class="project-link" title="Voir le site">
@@ -128,12 +128,12 @@ include 'header.php';
           </div>
         </div>
         <div class="project-content">
-          <h3>Nom du Projet 4</h3>
-          <p>Description détaillée du projet et de ses fonctionnalités principales.</p>
+          <h3>Portfolio</h3>
+          <p>Mon portfolio personnel, où je partage mes projets et mes compétences.</p>
           <div class="project-tags">
-            <span class="project-tag">Vue.js</span>
-            <span class="project-tag">Firebase</span>
-            <span class="project-tag">Tailwind CSS</span>
+            <span class="project-tag">HTML/CSS/JS</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
           </div>
         </div>
       </div>
