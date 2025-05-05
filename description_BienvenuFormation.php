@@ -134,7 +134,7 @@ include 'header.php';
                         <li>Accompagner les utilisateurs dans la mise en place d’un service</li>
                     </ul>
                     <br></br>
-                    <a href="fichier/cahier-des-charges.pdf" class="btn btn-outline-primary mt-2" target="_blank">📄 Voir Annexe</a>
+                    
                 </blockquote>
             </div>
         </div>
