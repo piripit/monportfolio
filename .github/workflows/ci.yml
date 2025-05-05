@@ -17,8 +17,16 @@ jobs:
           script: |
             echo "=== Début du déploiement ==="
 
+            # Vérification des répertoires web
+            echo "Vérification des répertoires web :"
+            ls -la /var/www/html/
+
+            # Vérification de la configuration Nginx
+            echo "Configuration Nginx :"
+            sudo nginx -T
+
             # Vérification de l'état actuel
-            echo "État actuel du répertoire :"
+            echo "État actuel du répertoire portfolio :"
             ls -la /var/www/html/portfolio
 
             # Configuration de Git
@@ -58,4 +66,15 @@ jobs:
             ls -la /var/www/html/portfolio
             echo "Derniers commits :"
             git log -n 3 --oneline
+
+            # Vérification de la configuration Nginx
+            echo "Vérification de la configuration Nginx :"
+            sudo nginx -t
+
+            # Redémarrage de Nginx si nécessaire
+            if [ $? -eq 0 ]; then
+              echo "Redémarrage de Nginx..."
+              sudo systemctl restart nginx
+            fi
+
             echo "=== Fin du déploiement ==="
