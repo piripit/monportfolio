@@ -51,6 +51,7 @@ include 'header.php';
           <li>React.js</li>
           <li>Node.js</li>
           <li>PHP/MySQL</li>
+          <li>Laravel</li>
         </ul>
       </div>
 
@@ -62,7 +63,6 @@ include 'header.php';
         <p>Développement d'applications mobiles natives et cross-platform</p>
         <ul class="skill-list">
           <li>React Native</li>
-          <li>Flutter</li>
           <li>Progressive Web Apps</li>
         </ul>
       </div>
@@ -76,7 +76,6 @@ include 'header.php';
         <ul class="skill-list">
           <li>MySQL</li>
           <li>MongoDB</li>
-          <li>PostgreSQL</li>
         </ul>
       </div>
 
@@ -88,8 +87,7 @@ include 'header.php';
         <p>Administration système et déploiement d'applications</p>
         <ul class="skill-list">
           <li>Git</li>
-          <li>Docker</li>
-          <li>CI/CD</li>
+          <li>GitHub</li>
         </ul>
       </div>
     </div>

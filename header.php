@@ -26,7 +26,7 @@
                 <li><a href="about.php" <?php echo isset($current_page) && $current_page === 'about' ? 'class="active"' : ''; ?>>À propos</a></li>
                 <li><a href="ecole.php" <?php echo isset($current_page) && $current_page === 'ecole' ? 'class="active"' : ''; ?>>Formation</a></li>
                 <li><a href="entreprise.php" <?php echo isset($current_page) && $current_page === 'entreprise' ? 'class="active"' : ''; ?>>Entreprise</a></li>
-                <li><a href="projet.php" <?php echo isset($current_page) && $current_page === 'projet' ? 'class="active"' : ''; ?>>Projets</a></li>
+                <li><a href="réalisation.php" <?php echo isset($current_page) && $current_page === 'projet' ? 'class="active"' : ''; ?>>Réalisations</a></li>
                 <li><a href="veille.php" <?php echo isset($current_page) && $current_page === 'veille' ? 'class="active"' : ''; ?>>Veille</a></li>
                 <li><a href="tableau.php" <?php echo isset($current_page) && $current_page === 'tableau' ? 'class="active"' : ''; ?>>Tableau</a></li>
             </ul>
