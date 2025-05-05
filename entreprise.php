@@ -42,7 +42,7 @@ include 'header.php';
                         <li>Intégration système</li>
                         <li>Tests et déploiement</li>
                     </ul>
-                    <a href="projet.php" class="btn btn-primary" target="_blank">
+                    <a href="description_gestion_pause.php" class="btn btn-primary" target="_blank">
                         <i class="fas fa-file-alt"></i> Voir réalisation
                     </a>
                 </div>
