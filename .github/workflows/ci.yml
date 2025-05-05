@@ -15,27 +15,47 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            # Configuration de Git pour accepter le répertoire
-            sudo git config --global --add safe.directory /var/www/html/portfolio
+            echo "=== Début du déploiement ==="
 
-            # Vérification et création du répertoire si nécessaire
+            # Vérification de l'état actuel
+            echo "État actuel du répertoire :"
+            ls -la /var/www/html/portfolio
+
+            # Configuration de Git
+            echo "Configuration de Git..."
+            sudo git config --global --add safe.directory /var/www/html/portfolio
+            git config --global --list
+
+            # Vérification et création du répertoire
             if [ ! -d "/var/www/html/portfolio" ]; then
+              echo "Création du répertoire portfolio..."
               sudo mkdir -p /var/www/html/portfolio
             fi
 
-            # Configuration des permissions de base
+            # Configuration des permissions
+            echo "Configuration des permissions..."
             sudo chown -R debian:www-data /var/www/html/portfolio
             sudo chmod -R 775 /var/www/html/portfolio
 
             # Mise à jour du code
+            echo "Mise à jour du code..."
             cd /var/www/html/portfolio
+            echo "État du dépôt Git avant pull :"
+            git status
             sudo -u debian git pull origin master
+            echo "État du dépôt Git après pull :"
+            git status
 
             # Configuration finale des permissions
+            echo "Configuration finale des permissions..."
             sudo find /var/www/html/portfolio -type d -exec chmod 775 {} \;
             sudo find /var/www/html/portfolio -type f -exec chmod 664 {} \;
             sudo chmod -R g+s /var/www/html/portfolio
 
-            # Vérification des permissions
-            echo "Vérification des permissions :"
+            # Vérification finale
+            echo "=== Vérification finale ==="
+            echo "Contenu du répertoire :"
             ls -la /var/www/html/portfolio
+            echo "Derniers commits :"
+            git log -n 3 --oneline
+            echo "=== Fin du déploiement ==="
