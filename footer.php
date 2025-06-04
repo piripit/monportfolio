@@ -19,7 +19,7 @@
                     <div class="social-links">
                         <a href="https://github.com/dashboard" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="http://linkedin.com/in/y-moriel-fiatuwo-51544a225" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="fichier/Cv Fiatuwo.pdf#view=FitH" target="_blank" title="Consulter mon CV"><i class="fas fa-file-pdf"></i></a>
+                        <a href="fichier/Cv FIATUWO 1.pdf#view=FitH" target="_blank" title="Consulter mon CV"><i class="fas fa-file-pdf"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
