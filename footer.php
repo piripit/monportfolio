@@ -6,9 +6,9 @@
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
                         <li><a href="about.php">À propos</a></li>
-                        <li><a href="formation.php">Formation</a></li>
+                        <li><a href="école.php">Formation</a></li>
                         <li><a href="entreprise.php">Entreprise</a></li>
-                        <li><a href="projet.php">Projets</a></li>
+                        <li><a href="réalisation.php">Projets</a></li>
                         <li><a href="veille.php">Veille</a></li>
                         <li><a href="tableau.php">Tableau</a></li>
                     </ul>
@@ -19,7 +19,7 @@
                     <div class="social-links">
                         <a href="https://github.com/dashboard" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="http://linkedin.com/in/y-moriel-fiatuwo-51544a225" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="fichier/Cv Fiatuwo.pdf" target="_blank" title="Télécharger mon CV"><i class="fas fa-file-pdf"></i></a>
+                        <a href="cv.php" title="Consulter mon CV"><i class="fas fa-file-pdf"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
