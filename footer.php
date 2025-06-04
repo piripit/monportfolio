@@ -6,7 +6,7 @@
                     <ul>
                         <li><a href="index.php">Accueil</a></li>
                         <li><a href="about.php">À propos</a></li>
-                        <li><a href="école.php">Formation</a></li>
+                        <li><a href="ecole.php">Formation</a></li>
                         <li><a href="entreprise.php">Entreprise</a></li>
                         <li><a href="réalisation.php">Projets</a></li>
                         <li><a href="veille.php">Veille</a></li>
