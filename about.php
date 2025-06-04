@@ -20,7 +20,7 @@ include 'header.php';
             </div>
             <div class="about-image-wrapper">
                 <div class="about-image">
-                    <img src="img/Moi.jpg" alt="Photo de profil" onerror="this.src='img/avatar-default.png'">
+                    <img src="img/Image.jpg" alt="Photo de profil" onerror="this.src='img/avatar-default.png'">
                 </div>
             </div>
         </div>
