@@ -17,9 +17,9 @@
                     <h3>Contact</h3>
                     <p>Email: yaovifia19@gmail.com</p>
                     <div class="social-links">
-                        <a href="https://github.com/dashboard" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="http://linkedin.com/in/y-moriel-fiatuwo-51544a225" target="_blank"><i class="fab fa-linkedin"></i></a>
-
+                        <a href="https://github.com/dashboard" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="http://linkedin.com/in/y-moriel-fiatuwo-51544a225" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="fichier/Cv Fiatuwo.pdf" target="_blank" title="Télécharger mon CV"><i class="fas fa-file-pdf"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
