@@ -77,7 +77,7 @@ include 'header.php';
                         </tr>
                         <tr>
                             <td>Diagramme de Gantt</td>
-                            <td><a href="fichier/diagramme-gantt-pause.pdf" target="_blank">Voir</a></td>
+                            <td><a href="fichier/gant-pause.pdf" target="_blank">Voir</a></td>
                         </tr>
                         <tr>
                             <td>Modèle base de données</td>
