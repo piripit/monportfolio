@@ -13,6 +13,20 @@ include 'header.php';
 
     <div class="formation-timeline">
       <div class="formation-item">
+        <div class="formation-date">2025 - 2026</div>
+        <div class="formation-content">
+          <h2>Bachelor3 Conception et Developpement d'Applications</h2>
+          <p>Formation en alternance à Learn IT Angers</p>
+          <ul class="formation-skills">
+            <li>Développement Web et mobile avancé </li>
+            <li>Programmation Orientée Objet</li>
+            <li>Bases de données</li>
+            <li>Cybersécurité</li>
+            <li>Gestion de projet</li>
+          </ul>
+        </div>
+      </div>
+      <div class="formation-item">
         <div class="formation-date">2023 - 2025</div>
         <div class="formation-content">
           <h2>BTS Services Informatiques aux Organisations</h2>

@@ -75,7 +75,7 @@ include 'header.php';
         <p>Conception et gestion de bases de données relationnelles et NoSQL</p>
         <ul class="skill-list">
           <li>MySQL</li>
-          <li>MongoDB</li>
+          <li>SQLlite</li>
         </ul>
       </div>
 
@@ -101,8 +101,7 @@ include 'header.php';
       <h2>Me Contacter</h2>
       <div class="title-bar"></div>
       <p class="section-description">
-        Vous avez un projet en tête ? N'hésitez pas à me contacter pour en discuter !
-      </p>
+        N'hésitez pas à me contacter pour discuter de vos projets ou collaborations professionnelles.
     </div>
     <div class="contact-content">
       <div class="contact-form">
