@@ -29,7 +29,7 @@ include 'header.php';
                         <li>ServiceNow : Gestion des incidents</li>
                         <li>Active Directory : Gestion des comptes</li>
                         <li>Prise en main à distance</li>
-                        <li>PowerTech : Gestion des postes</li>
+                        <li>PowerTech : Gestion des postes et utilisateurs</li>
                     </ul>
                 </div>
 

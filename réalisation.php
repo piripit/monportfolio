@@ -81,37 +81,6 @@ include 'header.php';
           </div>
         </div>
       </div>
-
-      <!-- Projet 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="img/clickn-eat.PNG" alt="Projet 3">
-          <div class="project-overlay">
-            <div class="project-links">
-              <a href="description_clickneat.php" class="project-link" title="Voir le site">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/piripit/clickn-eat" class="project-link" title="Voir le code">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="project-content">
-          <h3>Clickn'eat</h3>
-          <p>Click’n Eat est une application web qui facilite la gestion des restaurants en ligne.
-            Elle permet de suivre menus,
-            commandes et réservations en temps réel,
-            pour une organisation fluide et adaptée aux clients.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML/CSS/JS</span>
-            <span class="project-tag">Laravel</span>
-            <span class="project-tag">MySQL</span>
-            <span class="project-tag">Bootstrap</span>
-          </div>
-        </div>
-      </div>
-
       <!-- Projet 4 -->
       <div class="project-card">
         <div class="project-image">

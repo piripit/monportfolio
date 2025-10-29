@@ -23,6 +23,7 @@ include 'header.php';
             <li>Bases de données</li>
             <li>Cybersécurité</li>
             <li>Gestion de projet</li>
+            <li>Atelier IA</li>
           </ul>
         </div>
       </div>
