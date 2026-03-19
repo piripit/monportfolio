@@ -10,7 +10,7 @@ include 'header.php';
     <div class="hero-content">
       <div class="hero-text">
         <h1>FIATUWO Moriel</h1>
-        <div class="hero-subtitle">Étudiant en BTS SIO option SLAM</div>
+        <div class="hero-subtitle">Étudiant en bachelor 3 et en recherche d'alternance</div>
         <p class="hero-description">
           Je transforme des idées en solutions digitales innovantes.<br>
           Spécialisé dans le développement web et les technologies modernes.

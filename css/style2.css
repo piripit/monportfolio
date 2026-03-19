@@ -124,6 +124,7 @@ body {
     color: var(--text-color);
     margin-bottom: 2rem;
     opacity: 0.9;
+    text-align: center;
 }
 
 .cta-buttons {

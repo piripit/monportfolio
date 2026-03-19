@@ -1,6 +1,6 @@
 <?php
-$current_page = 'projets';
-$page_title = 'Mes Projets';
+$current_page = 'réalisations';
+$page_title = 'Mes Réalisations';
 include 'header.php';
 ?>
 
